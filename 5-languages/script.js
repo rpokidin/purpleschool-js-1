@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    var lang = prompt('Какой ваш разговорный язык?', '');
+    const lang = prompt('Какой ваш разговорный язык?', '');
 
-    switch (lang) {
+    switch (lang.toLowerCase()) {
         case 'en':
           console.log('Hello!');
           break;
