@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const distantionLatitude = 55.743725
     const distantionLongetude = 37.863459
 
-    console.log(Math.sqrt(Math.pow((positionLatitude - positionLongetude), 2) + Math.pow((distantionLatitude - distantionLongetude), 2)))
+    const result = Math.sqrt((positionLatitude - positionLongetude) ** 2 + (distantionLatitude - distantionLongetude) ** 2)
+    
+    console.log(result)
 
 })
