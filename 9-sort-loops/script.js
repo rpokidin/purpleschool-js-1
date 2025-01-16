@@ -1,15 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    let arr = [1, 40, -5, 10, 0]
+    let arrNum = [1, 40, -5, 10, 0]
 
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr.length; j++){
-            if (arr[i] < arr[j]) {
-                [arr[i],arr[j]] = [arr[j], arr[i]]
+    function sortArr(arrNum) {
+
+        for (let i = 0; i < arrNum.length; i++) {
+            for (let j = 0; j < arrNum.length; j++){
+                if (arrNum[i] < arrNum[j]) {
+                    [arrNum[i],arrNum[j]] = [arrNum[j], arrNum[i]]
+                }
             }
         }
+
+        console.log(arrNum)
+
     }
 
-    console.log(arr)
+    sortArr(arrNum)
 
 })
